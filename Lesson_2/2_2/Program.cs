@@ -17,6 +17,6 @@ void OneOfNum(int num_1, int num_2)
     }    
 }
 
-int a = int.Parse(Console.ReadLine()!)
-int b = int.Parse(Console.ReadLine()!)
+int a = int.Parse(Console.ReadLine()!);
+int b = int.Parse(Console.ReadLine()!);
 OneOfNum(a, b);
