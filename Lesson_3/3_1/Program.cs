@@ -1,32 +1,29 @@
-﻿// double Distance(double x1, double y1, double x2, double y2)
-// {
-//     return Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
-// }
+﻿// 1. Напишите программу, которая по заданному номеру четверти,
+//    показывает диапазон возможных координат точек в этой четверти (x и y).
 
-// Console.WriteLine(Distance(3, 6, 2, 1));
-// Console.WriteLine(Distance(7, -5, 1, -1));
-
-Console.WriteLine("Введите число: ");
-
-int number = int.Parse(Console.ReadLine()!);
-int result = GetThirdDigit(number);
-
-
-int GetThirdDigit(int number)
-{   
-    int i = 0;
-    while (number > 999)
-    {
-        number /= 10;
-        i = number % 10;
-    }
-    return i;
-}
-
-
-if (number < 100)
+void Coordinates(string num)
 {
-    Console.WriteLine("Третьей цифры нет!");
+    if (num == "I")
+    {
+        Console.WriteLine("x > 0, y > 0");
+    }
+    else if (num == "II")
+    {
+        Console.WriteLine("x < 0, y > 0");
+    }
+    else if (num == "III")
+    {
+        Console.WriteLine("x < 0, y < 0");
+    }
+    else if (num == "IV")
+    {
+        Console.WriteLine("x > 0, y < 0");
+    }
+    else
+    {
+        Console.WriteLine("The data is not correct!");
+    }
 }
-else
-    Console.WriteLine($"Третья цифра число {result}");
+
+string num = Console.ReadLine()!;
+Coordinates(num);
