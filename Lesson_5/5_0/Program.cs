@@ -34,7 +34,8 @@ void SumPosNeg(int[] arr)
             neg += arr[i];
     }
     Console.WriteLine($"Positive: {pos}, negative: {neg}");
-}
+} 
+
 
 int num = int.Parse(Console.ReadLine()!);
 int start = int.Parse(Console.ReadLine()!);
