@@ -53,6 +53,6 @@
         return sum;
     }
 
-    int n = int.Parse(Console.ReadLine()!); ;
+    int n = int.Parse(Console.ReadLine()!);
 
     Console.WriteLine(DigitSum(n));
